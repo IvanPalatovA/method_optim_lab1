@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "student": "Палатов Иван Александрович",
+    "group": "Б24-517",
+    "group_index_Q": 1,
+    "student_number_N": 16,
+    "year_Y": 26,
+    "variant": 6,
+    "seed": 10116,
+    "n_stations": 5,
+    "horizon_hours": 24,
+    "total_installed_capacity_mw": 2700.0,
+    "total_min_capacity_mw": 650.0,
+    "system_limits": {
+      "hydro_daily_energy_limit_mwh": 4000.0,
+      "coal_daily_fuel_limit_mwh": 11000.0,
+      "max_daily_co2_emission_tons": 14000.0
+    }
+  },
+  "stations": [
+    {
+      "id": 1,
+      "name": "АЭС 'Восход'",
+      "type": "nuclear",
+      "marginal_cost": 650.0,
+      "p_min": 400.0,
+      "p_max": 800.0,
+      "ramp_up": 40.0,
+      "ramp_down": 40.0,
+      "co2_rate": 0.0,
+      "description": "Базовая атомная станция (низкая себестоимость, малая маневренность)"
+    },
+    {
+      "id": 2,
+      "name": "ГРЭС-1 (Уголь)",
+      "type": "coal",
+      "marginal_cost": 1450.0,
+      "p_min": 150.0,
+      "p_max": 600.0,
+      "ramp_up": 100.0,
+      "ramp_down": 100.0,
+      "co2_rate": 0.85,
+      "description": "Тепловая угольная станция (средняя стоимость, ограничение по топливу)"
+    },
+    {
+      "id": 3,
+      "name": "ТЭЦ-2 (Газ)",
+      "type": "gas_cogen",
+      "marginal_cost": 1900.0,
+      "p_min": 100.0,
+      "p_max": 500.0,
+      "ramp_up": 150.0,
+      "ramp_down": 150.0,
+      "co2_rate": 0.42,
+      "description": "Газовая теплоэлектроцентраль (высокая маневренность)"
+    },
+    {
+      "id": 4,
+      "name": "ГЭС 'Бурея'",
+      "type": "hydro",
+      "marginal_cost": 180.0,
+      "p_min": 0.0,
+      "p_max": 450.0,
+      "ramp_up": 250.0,
+      "ramp_down": 250.0,
+      "co2_rate": 0.0,
+      "description": "Гидроэлектростанция (минимальная себестоимость, ограничена суточным гидроресурсом)"
+    },
+    {
+      "id": 5,
+      "name": "ГТУ-Пиковая (Газ)",
+      "type": "gas_turbine",
+      "marginal_cost": 3400.0,
+      "p_min": 0.0,
+      "p_max": 350.0,
+      "ramp_up": 300.0,
+      "ramp_down": 300.0,
+      "co2_rate": 0.55,
+      "description": "Пиковая газотурбинная установка (быстрый пуск, высокая стоимость топлива)"
+    }
+  ],
+  "demand_mwh": [
+    975.9,
+    937.1,
+    919.3,
+    933.3,
+    994.6,
+    1135.3,
+    1386.7,
+    1598.4,
+    1732.0,
+    1796.5,
+    1680.4,
+    1686.2,
+    1616.1,
+    1610.6,
+    1567.1,
+    1585.6,
+    1682.0,
+    1839.2,
+    1989.1,
+    1940.0,
+    1809.3,
+    1657.5,
+    1470.3,
+    1219.8
+  ]
+}

@@ -1,0 +1,12 @@
+============================================================
+HiGHS Solver Log [Method: highs-ds]
+============================================================
+Status Code     : 0 (Optimization terminated successfully. (HiGHS Status 7: Optimal))
+Interpretation  : OPTIMAL: Найдено оптимальное решение с гарантией глобального минимума.
+Success         : True
+Iterations      : 44
+Solve Time      : 7.123 ms
+Objective Value : 32,930,935.00 руб.
+Variables Count : 120
+Constraints (ub): 257
+============================================================
